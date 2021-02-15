@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks & Dreams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <main>
+        <section id="display-area">
+            <div id="tasks-section">
+                <h3>Tasks</h3>
+                <div id="tasks"></div>
+            </div>
+            <div id="dreams-section">
+                <h3>Dreams</h3>
+                <div id="dreams"></div>
+            </div>
+        </section>
+        <section id="input-area">
+            <div class="section to-do">
+                <h3 id="tasks-title">Tasks</h3>
+                <form id="tasks-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title"><br>
+                    <label for="time">Date:</label>
+                    <input type="date" id="time"><br>
+                    <label for="description">Description:</label><br>
+                    <textarea name="text" placeholder="Enter your text here..." id="description"></textarea><br>
+                    <button type="submit" form="tasks-form" value="submit">Add to tasks</button>
+                </form>
+            </div>
+            <div class="section dreams">
+                <h3 id="dreams-title">Dreams</h3>
+                <form id="dream-form">
+                    <label for="dream-title">Title</label>
+                    <input type="text" id="dream-title"><br>
+                    <label for="due-date">Due date:</label>
+                    <input type="date" id="due-date">
+                    <span>Don't let it take you forever</span><br>
+                    <label for="dream-description">Description:</label><br>
+                    <textarea name="text" placeholder="Enter your text here..." id="dream-description"></textarea><br>
+                    <button type="submit" form="dream-form" value="submit">Add to dreams</button>
+                </form>
+            </div>
+        </section>
+   </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
